@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\MotoShare.Domain\MotoShare.Domain.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.25.0"/>
+    <PackageReference Include="RawRabbit" Version="2.0.0-rc5"/>
+    <PackageReference Include="RawRabbit.DependencyInjection.ServiceCollection" Version="2.0.0-rc5"/>
+    <PackageReference Include="RawRabbit.Enrichers.GlobalExecutionId" Version="2.0.0-rc5"/>
+    <PackageReference Include="RawRabbit.Enrichers.HttpContext" Version="2.0.0-rc5"/>
+    <PackageReference Include="RawRabbit.Enrichers.MessageContext" Version="2.0.0-rc5"/>
+    <PackageReference Include="RawRabbit.Operations.Publish" Version="2.0.0-rc5"/>
+    <PackageReference Include="RawRabbit.Operations.Subscribe" Version="2.0.0-rc5"/>
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.0-preview.3.24172.9"/>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>

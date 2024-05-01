@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoShare.Api", "MotoShare.Api\MotoShare.Api.csproj", "{BB28F733-3522-43EE-8498-97FEAF156255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoShare.Domain", "MotoShare.Domain\MotoShare.Domain.csproj", "{4DCF375E-8480-41FD-B893-F169D98B8EB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoShare.Infrastructure", "MotoShare.Infrastructure\MotoShare.Infrastructure.csproj", "{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB28F733-3522-43EE-8498-97FEAF156255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB28F733-3522-43EE-8498-97FEAF156255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB28F733-3522-43EE-8498-97FEAF156255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB28F733-3522-43EE-8498-97FEAF156255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCF375E-8480-41FD-B893-F169D98B8EB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCF375E-8480-41FD-B893-F169D98B8EB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCF375E-8480-41FD-B893-F169D98B8EB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCF375E-8480-41FD-B893-F169D98B8EB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
