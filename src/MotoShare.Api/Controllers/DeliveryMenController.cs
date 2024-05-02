@@ -66,4 +66,13 @@ public class DeliveryMenController : ControllerBaseCustom
     [HttpPost("inform-return-date")]
 	public async Task<IActionResult> SaveReturnDate([FromBody] SaveMotorcycleRentEndDateCommand command) =>
         await TrySendCommand(command);
+
+    /// <summary>
+    /// Obter o valor a ser pago pela locação
+    /// </summary>
+    /// <param name="rentalId">Identificador do aluguel</param>
+    /// <returns></returns>
+    [HttpGet("{rentalId:guid}/value-to-pay")]
+	public async Task<IActionResult> SaveReturnDate([FromRoute] Guid rentalId) =>
+        await TrySendCommand(new GetRentalValueToPayCommand(rentalId));
 }

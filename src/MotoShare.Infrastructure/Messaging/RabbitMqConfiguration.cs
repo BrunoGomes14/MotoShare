@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MotoShare.Domain;
 using MotoShare.Domain.Commands.MotorcycleRental.Event;
 using MotoShare.Domain.Messaging;
 using RawRabbit;
@@ -36,5 +37,6 @@ public static class RabbitMqConfiguration
     {
         var subscriber = new BusSubscriber(app);
         subscriber.SubscribeEvent<EndDateReceivedCommandEvent>();
+        subscriber.SubscribeEvent<MotorcycleCreatedEvent>();
     }
 }

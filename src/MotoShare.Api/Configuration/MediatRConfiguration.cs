@@ -1,11 +1,9 @@
 ﻿using System.Reflection;
-using FluentValidation;
-using FluentValidation.AspNetCore;
 
 namespace MotoShare.Api;
 
 /// <summary>
-/// Configura biblioteca Mediator
+/// Configura biblioteca de Mediator
 /// </summary>
 public static class MediatRConfiguration
 {
@@ -16,19 +14,9 @@ public static class MediatRConfiguration
         if (builder == null)
             throw new ArgumentNullException(nameof(builder));
 
-        //Mediatr
         builder.Services.AddMediatR(configuration =>
         {
-            //Como o Handler genérico é registrado manual, devemos excluir ele do mapeamento.
-            //var exclude = new[] { typeof(AllProcessInstanceDomainEventHandler<>) };
-            configuration.TypeEvaluator = new Func<Type, bool>((type) =>
-            {
-
-                //var result = !exclude.Contains(type);
-                //return result;
-                return true;
-            });
-
+            configuration.TypeEvaluator = new Func<Type, bool>((type) => true);
             configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()); //API
             configuration.RegisterServicesFromAssembly(typeof(Domain.Bootstrapper).Assembly); //Dominio
 

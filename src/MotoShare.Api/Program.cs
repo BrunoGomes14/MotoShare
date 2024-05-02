@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using MotoShare.Api;
 using MotoShare.Api.Configuration;
 using MotoShare.Domain;

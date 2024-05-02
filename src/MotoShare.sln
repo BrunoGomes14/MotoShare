@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoShare.Domain", "MotoSha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoShare.Infrastructure", "MotoShare.Infrastructure\MotoShare.Infrastructure.csproj", "{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoShare.Tests", "MotoShare.Tests\MotoShare.Tests.csproj", "{B3B3B0F6-5412-41D2-A30C-C7FE1595ED37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18E3DC4E-E782-44C7-87C8-90E1B8815BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B3B0F6-5412-41D2-A30C-C7FE1595ED37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B3B0F6-5412-41D2-A30C-C7FE1595ED37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B3B0F6-5412-41D2-A30C-C7FE1595ED37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B3B0F6-5412-41D2-A30C-C7FE1595ED37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

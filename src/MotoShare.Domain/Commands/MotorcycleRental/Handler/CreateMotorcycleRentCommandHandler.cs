@@ -37,6 +37,9 @@ public class CreateMotorcycleRentCommandHandler : IRequestHandler<CreateMotorcyc
         if (!deliveryMen.DriverLicenseType.Contains("A"))
             return new ResultModel(false, "Infelizmente para alugar uma moto o entregador deve estar habilitado na categoria A");
 
+        if (deliveryMen.DriverLicenseImageName == null)
+            return new ResultModel(false, "A imagem da carteira de motorista deve ser informada para realizar alugueis.");
+
         var motorcycle = await _motorcycleRepository.FindOneAsync(mt => mt.IsAvailable);
         if (motorcycle == null)
             return new ResultModel(false, "Infelizemente, não há motos disponíveis no momento.");
